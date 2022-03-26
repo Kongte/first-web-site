@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>코딩</title>
   <link rel="stylesheet" href="style.css">
+  <script src="darkmode.js"></script>
 </head>
 
 <body>
@@ -13,7 +14,7 @@
     <ol type="A">
       <li><a href="index.html">HTML</a></li>
       <li><a href="index2.html">CSS</a></li>
-      <li>JavaScrip</li>
+      <li><a href="index3.html">JavaScrip</a></li>
     </ol>
     <div id="article">
       <h2>코딩</h2>
@@ -27,17 +28,8 @@
           <a href="http://www.tcpschool.com/" target="_blank" title="참고용">용어 검색 참고용</a><br>
           <a href="우끼끼.html" style="color:#00ffff;text-decoration:underline">우끼끼</a><br>
           다크모드-->
-          <input id="dark_day" type="button" value="dark" onclick="
-        if(document.querySelector('#dark_day').value === 'dark'){
-          document.querySelector('body').style.backgroundColor='black';
-          document.querySelector('body').style.color='white';
-          document.querySelector('#dark_day').value = 'light';
-      } else {
-          document.querySelector('body').style.backgroundColor='white';
-          document.querySelector('body').style.color='black';
-          document.querySelector('#dark_day').value = 'dark';
-      }
-    ">
+          <input id="dark_day" type="button" value="dark" onclick="darkmode(this);">
+          <input type="button" value="버튼" onclick="alert('야호')">
     </div>
   </div>
 </body>
